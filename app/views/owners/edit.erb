@@ -6,7 +6,7 @@
     <input id="hidden" type="hidden" name="_method" value="PATCH"/>
     <label>Edit the Owner's Name:</label>
     <br>
-    <input type="text" name="owner[name]" value="<%= @owner.name %>">
+    <input id="owner_name" type="text" name="owner[name]" value="<%= @owner.name %>">
  
     <br>
     <p>Select an existing pet or create a new one below.</p>
@@ -14,7 +14,7 @@
  
     <h3>Existing Pets</h3>
     <% @pets.each do |pet| %>
-      <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>" <%='checked' if @owner.pets.include?(pet) %><%= pet.name %>/><br>
+      <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>" <%='checked' if @owner.pets.include?(pet) %>><%= pet.name %></input><br>
     <% end %>
     <br>
  
