@@ -3,7 +3,7 @@
 <h2>Edits for <%= @owner.name %></h2>
  
   <form action="/owners/<%= @owner.id %>" method="POST">
-    <input id="hidden" type="hidden" name="_method" value="patch">
+    <input id="hidden" type="hidden" name="_method" value="PATCH">
     <label>Edit the Owner's Name:</label>
     <br>
     <input type="text" name="owner[name]" value="<%= @owner.name %>">
