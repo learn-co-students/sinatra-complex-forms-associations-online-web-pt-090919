@@ -2,8 +2,7 @@
 
 ## Objectives
 
-- Build forms that allow a user to create and edit a given resource and its
-  associated resources.
+- Build forms that allow a user to create and edit a given resource and its associated resources.
 - Build controller actions that handle the requests sent by such forms.
 
 ## Introduction
